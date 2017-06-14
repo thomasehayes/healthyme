@@ -15,14 +15,9 @@ class MenuTable extends Migration
         Schema::create('menu', function (Blueprint $table) {
         $table->increments('id');
        
-        $table->string('salads');
-        $table->string('coldSandwiches');
-        $table->string('hotSandwiches');
-        $table->string('breakfast');
-        $table->string('sides');
-        $table->string('soup');
-        $table->string('desserts');
-        $table->string('drnks'); 
+        $table->string('item');
+        $table->string('description');
+        $table->string('price');
         $table->timestamps();
 
         });
